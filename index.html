@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="/manifest.json">
+<link rel="author" href="/humans.txt">
+<link rel="icon" type="image/png" sizes="192x192" href="/logo-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/logo-512.png">
+
+
+<!-- ✅ Podstawowe informacje -->
+<title>Karol Zinka – Automatyzacja | Google Workspace | Helpdesk IT</title>
+<meta name="description" content="Portfolio Karola Zinki. Specjalista od automatyzacji procesów biurowych i logistycznych, Google Workspace, Google Apps Script, HelpDesk IT.">
+<meta name="keywords" content="Karol Zinka, automatyzacja, Google Workspace, Apps Script, logistyka, helpdesk IT, programista, systemy IT, portfolio">
+<meta name="author" content="Karol Zinka">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ Weryfikacja Google Search Console -->
+<meta name="google-site-verification" content="NewIL4rpRjX-er0YGiyLYGAPKcBUAIGNxvsNkt9vd-Q">
+
+<!-- ✅ Open Graph (Facebook, LinkedIn, Messenger) -->
+<meta property="og:title" content="Karol Zinka – Automatyzacja | Google Workspace | Helpdesk IT">
+<meta property="og:description" content="Pomagam firmom automatyzować procesy dzięki Google Workspace i Apps Script. Sprawdź portfolio.">
+<meta property="og:image" content="https://karolz.hadnet.pl/graphic/avatar.jpg">
+<meta property="og:url" content="https://karolz.hadnet.pl/">
+<meta property="og:type" content="website">
+
+
+
+<!-- ✅ Favicon -->
+<link rel="icon" href="https://karolz.hadnet.pl/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RY9BETN0J4"></script>
+  
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RY9BETN0J4');
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Karol Zinka",
+  "url": "https://karolz.hadnet.pl",
+  "image": "https://karolz.hadnet.pl/graphic/avatar.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/karol-zinka-a8408516a",
+    "https://pl-pl.facebook.com/karol.zinka.75",
+    "https://www.instagram.com/zineq"
+  ],
+  "jobTitle": "Specjalista ds. automatyzacji i Google Workspace",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Karol Zinka – Automatyzacje i IT"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rymarska 30",
+    "addressLocality": "Gdynia",
+    "postalCode": "81-168",
+    "addressCountry": "PL"
+  },
+  "email": "mailto:karolzinka@gmail.com",
+  "telephone": "+48 793 564 725"
+}
+</script>
+
+<script>
+window.cookieConsentAccepted = false;
+
+function loadGoogleAnalytics() {
+  const script1 = document.createElement('script');
+  script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-RY9BETN0J4';
+  script1.async = true;
+  document.head.appendChild(script1);
+
+  const script2 = document.createElement('script');
+  script2.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RY9BETN0J4');
+  `;
+  document.head.appendChild(script2);
+}
+
+function acceptCookies() {
+  window.cookieConsentAccepted = true;
+  localStorage.setItem('cookie-consent', 'accepted');
+  document.getElementById('cookieModal').style.display = 'none';
+  loadGoogleAnalytics();
+}
+
+function rejectCookies() {
+  localStorage.setItem('cookie-consent', 'rejected');
+  document.getElementById('cookieModal').style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const consent = localStorage.getItem('cookie-consent');
+  if (consent === 'accepted') {
+    loadGoogleAnalytics();
+  } else if (!consent) {
+    const modal = document.getElementById('cookieModal');
+    if (modal) {
+      modal.style.display = 'flex'; // Ustawiamy jako flex, żeby modal się ładnie wycentrował
+    }
+  }
+});
+</script>
+
+
+  <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Usuwa domyślne marginesy */
+  padding: 0; /* Usuwa domyślne odstępy */
+  width: 99vw; /* Pełna szerokość ekranu */
+  overflow-x: hidden; /* Ukrywa poziomy scroll, jeśli coś wystaje */
+  background-color: #2c2c2c;
+  color: #ffffff;
+  scroll-behavior: smooth;
+ 
+}
+
+
+   /* Nagłówek */
+header {
+  display: flex;
+  align-items: left;
+  justify-content: left; /* Wyśrodkowanie treści */
+  background: linear-gradient(135deg, #ff6f00, #ff8c00);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  color: white;
+  position: relative;
+  z-index: 1001;
+}
+
+/* Tekst nagłówka */
+.header-text h1 {
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Lekkie podbicie tekstu */
+}
+
+.header-subtext {
+  font-size: 16px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin-right: 5px;
+      margin-left: 5px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .container {
+      max-width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+.botton {
+  margin: auto;
+  padding: 20px;
+  max-width: 60%;
+}
+
+ 
+.section {
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+
+
+ 
+.section {
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease; /* Płynna zmiana */
+  border: 2px solid transparent; /* Domyślnie brak ramki */
+}
+
+.section:hover {
+  border: 2px solid #ff8c00; /* Pomarańczowa ramka */
+  box-shadow: 0 8px 20px rgba(255, 140, 0, 0.6); /* Efekt świetlnego podbicia */
+}
+
+.footer {
+  text-align: center;
+  padding: 15px 10px; /* Większy padding */
+  background: linear-gradient(0deg, #1e1e1e, #333);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  margin: 5px 0; /* Mniejsze odstępy między liniami tekstu */
+  font-size: 16px; /* Lekko większa czcionka */
+  color: #ddd;
+}
+
+.footer a {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffa733;
+  text-shadow: 0px 0px 10px rgba(255, 140, 0, 0.8);
+}
+
+/* 📌 Ikony social media */
+.social-icons {
+  margin-top: 10px; /* Odstęp od góry */
+  margin-bottom: 10px; /* Dodany odstęp od dołu */
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(255, 140, 0, 0.5);
+}
+    
+  
+     
+/* Etykiety formularza - poprawne przesunięcie */
+.form-group {
+  position: relative;
+  margin-bottom: 25px; /* Większy odstęp dla lepszej czytelności */
+  width: 100%; /* Zapewnia równe dopasowanie */
+}
+
+input, textarea {
+  width: calc(100% - 24px); /* Usuwa problem z szerokością */
+  padding: 14px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+/* Kiedy input jest aktywny lub zawiera tekst */
+input:focus, textarea:focus,
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  border-color: #ff8c00;
+  box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+ 
+/* Etykiety formularza */
+label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-size: 16px;
+  color: #999;
+  background: white;
+  padding: 3px 8px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  border-radius: 15px; /* Zaokrąglone rogi */
+  border: 2px solid transparent; /* Brak ramki domyślnie */
+}
+
+/* Gdy input jest aktywny lub zawiera tekst */
+input:focus + label, textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 10px;
+  font-size: 14px;
+  color: #ff8c00;
+  border: 2px solid #ff8c00; /* Pomarańczowa ramka */
+  background: white;
+  padding: 2px 6px;
+  box-shadow: 0px 0px 8px rgba(255, 140, 0, 0.6); /* Efekt świetlnego podbicia */
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ background: #141414; /* Pełny ciemny kolor bez przezroczystości */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  text-align: center;
+  max-width: 80%;
+}
+
+.modal-content {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.modal p {
+  margin: 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.15); /* Delikatnie jaśniejsze pole */
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.modal button {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #ff6f00, #ff8c00);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal button:hover {
+  background: #e65c00;
+}
+
+
+    
+    input, textarea {
+      width: calc(100% - 24px); /* Usuwa problem z szerokością */
+      padding: 14px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      background-color: white;
+      transition: border-color 0.3s ease;
+      margin: 0 auto; /* Środek */
+      display: block;
+    }
+    
+    input:focus, textarea:focus {
+      border-color: #ff8c00;
+    }
+    
+    label {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      font-size: 14px;
+      color: #999;
+      transition: all 0.3s ease;
+      background: white;
+      padding: 5px 10px;
+      pointer-events: none;
+      border-radius: 20px;
+    }
+    
+ 
+    
+    button {
+      background: linear-gradient(135deg, #ff8c00, #ff6f00);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      width: auto;
+      display: block;
+      margin: auto;
+      transition: background 0.3s ease;
+    }
+    
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    
+    .spinner {
+      display: none;
+      margin: 10px auto;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(0, 0, 0, 0.1);
+      border-top-color: #ff8c00;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .status-message {
+      font-size: 14px;
+      color: green;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+    }
+    
+/* 📌 Efekt szyby dla menu */
+
+.nav-menu {
+  position: sticky;
+  top: 0;
+  width: 99%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 5px 10px; /* Mniejsze odstępy */
+  z-index: 1001;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  white-space: nowrap; /* Zapobiega zawijaniu */
+  overflow: hidden;
+}
+
+/* 🖥️ Nowe ustawienia menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Mniejsza przerwa między elementami */
+  padding: 0;
+  margin: 0;
+}
+
+/* 🖥️ Elementy menu */
+.nav-links li {
+  display: inline;
+}
+
+/* 🖥️ Linki w menu */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Separator " | " między elementami */
+.nav-links li:not(:last-child)::after {
+  content: "|";
+  color: white;
+  margin-left: 5px; /* Mniejsza przerwa */
+}
+
+ 
+
+.nav-links a:hover {
+  background: rgba(255, 140, 0, 0.4); /* Delikatne podświetlenie */
+  color: #ffa733; /* Jasny pomarańczowy */
+  border-radius: 5px;
+}
+
+/* 🖥️ Wyszukiwarka - dostosowanie */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  padding: 2px 5px; /* Zmniejszone */
+  margin-left: 10px; /* Mniejszy margines */
+}
+
+ 
+/* 📌 Wyszukiwarka */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin-left: 30px; /* Odsunięcie od lewej strony */
+
+  
+}
+
+.search-input {
+  width: 120px;
+  padding: 4px;
+  border: none;
+  font-size: 12px;
+  outline: none;
+}
+
+/* Kontrolki wyszukiwania */
+.search-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 25px;
+}
+
+.search-prev, .search-next {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 3px;
+  background: #ff8c00;
+  color: white;
+  transition: background 0.2s;
+}
+
+.search-prev:hover, .search-next:hover {
+  background: #e65c00;
+}
+#searchCounter {
+  font-size: 12px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-left: 30px;
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+/* 🏗️ Stałe menu hamburgerowe */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;  /* Stałe położenie */
+  top: 35px;        /* Odsunięcie od góry */
+  right: 18px;      /* Odsunięcie od prawej */
+  width: 40px;      /* Mniejszy rozmiar */
+  height: 40px;
+  background: rgba(50, 50, 50, 0.8); /* Szary, półprzezroczysty */
+  border-radius: 10px; /* Zaokrąglone rogi */
+  z-index: 1102;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Delikatny cień */
+}
+
+/* Paseczki w hamburgerze */
+.hamburger div {
+  width: 22px;  /* Mniejsze paski */
+  height: 2px;  /* Cieńsze paski */
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px; /* Zaokrąglone */
+}
+
+/* Efekt kliknięcia */
+.hamburger:active {
+  transform: scale(0.9); /* Efekt wciśnięcia */
+}
+
+/* Efekt hover */
+.hamburger:hover {
+  background: rgba(80, 80, 80, 0.9); /* Lekko jaśniejszy po najechaniu */
+
+}
+.hamburger:hover div {
+  background: #ffa733; /* Pomarańczowy kolor */
+}
+
+/* Animacja otwierania menu */
+.hamburger.open div:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open div:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+
+/* 📱 Menu mobilne – pełnoekranowe */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1101;
+}
+
+.mobile-menu.show {
+  transform: translateY(0);
+}
+
+ 
+
+
+/* 📌 Wyszukiwarka w menu mobilnym */
+.mobile-search {
+  margin-top: 20px;
+}
+
+.mobile-search .search-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Tryb mobilny */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .search-container {
+    display: none;
+  }
+}
+/* 🖥️ Efekt hover dla menu na komputerach */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Płynne przejście */
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  transform: translateY(-2px); /* Minimalne podniesienie */
+}
+
+/* 📱 Efekt hover dla menu mobilnego */
+/* Efekt hover dla menu mobilnego */
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Efekt hover - pomarańczowe podświetlenie */
+.mobile-menu a:hover {
+  background: rgba(255, 255, 255, 0.2); /* Szare tło */
+  color: #ffa733; /* Pomarańczowy tekst */
+  border-radius: 25px;
+}
+
+
+.highlight {
+  background: yellow;
+  color: black;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.active-highlight {
+  background: orange;
+  font-weight: bold;
+}
+
+.search-controls span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #ff8c00;
+  transition: background 0.3s;
+}
+
+.search-controls span {
+  width: 20px; /* Mniejsza szerokość */
+  height: 20px; /* Mniejsza wysokość */
+  padding: 2px;
+  border-radius: 50%;
+}
+
+
+.search-controls svg {
+  width: 12px; /* Zmniejszenie strzałek */
+  height: 12px;
+}
+.qr-wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.qr-container {
+  display: none; /* Domyślnie ukryty */
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.qr-container.show {
+  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.qr-container img {
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.6);
+}
+
+.qr-container img:hover {
+  transform: scale(1.3);
+}
+
+button {
+  background: linear-gradient(135deg, #ff8c00, #ff6f00);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e65c00;
+}
+
+.qr-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.qr-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 140, 0, 0.5);
+}
+
+
+.clear-search {
+  display: none; /* Domyślnie ukryte */
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+  padding: 3px 5px;
+  background: #ff8c00;
+  color: white;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+.clear-search:hover {
+  background: #e65c00;
+}
+ 
+ 
+.goog-te-menu-frame {
+  display: none !important; /* Ukrywa oryginalne menu */
+}
+
+.goog-te-gadget {
+  font-size: 0; /* Usuwa domyślny tekst */
+}
+
+#custom-google-translate {
+  display: flex;
+  gap: 5px; /* Odstęp między flagami */
+  align-items: center;
+}
+
+#custom-google-translate img {
+  width: 25px; /* Rozmiar flagi */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#custom-google-translate img:hover {
+  transform: scale(1.2);
+}
+
+ 	
+.goog-te-gadget {
+  font-size: 0 !important;
+  display: none !important;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}
+.goog-te-gadget select,
+.goog-te-banner-frame,
+.goog-te-menu-frame {
+  display: none !important;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.language-option:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.language-option img {
+  width: 20px;
+  height: auto;
+}
+/* Styl linków partnerów */
+.partner-link {
+    color: #ff8c00; /* Pomarańczowy kolor */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efekt hover - jak w stopce */
+.partner-link:hover {
+    color: #ffa733;
+    text-shadow: 0px 0px 10px rgba(255, 140, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .container,
+  .botton,
+  .section,
+  .footer {
+ 
+    max-width: 100% !important;
+    margin: 0 !important;
+ 
+    border-radius: 0 !important;
+  }
+
+@media (max-width: 768px) {
+    .partner-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .partner-content img {
+        order: -1; /* Przesuwa obrazek na górę */
+        width: 120px; /* Dostosowanie szerokości */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .partner-description {
+        max-width: 100%; /* Pełna szerokość tekstu */
+    }
+}
+
+ 
+
+
+</style>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    if (!document.querySelector('.goog-te-combo')) {
+      console.warn("❌ Google Translate jeszcze się nie załadował! Spróbuj odświeżyć stronę.");
+    }
+  }, 3000); // Czekaj 3 sekundy na załadowanie Google Translate
+});
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ pageLanguage: 'pl' }, 'google_translate_element');
+}
+
+function setLanguage(lang) {
+  let select = document.querySelector('.goog-te-combo');
+
+  if (select) {
+    select.value = lang;
+    select.dispatchEvent(new Event('change'));
+    console.log(`✅ Ustawiono język: ${lang}`);
+  } else {
+    console.warn("❌ Nie znaleziono selecta tłumacza! Sprawdź, czy Google Translate jest załadowany.");
+  }
+}
+
+
+
+
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+
+<header>
+
+  <img src="https://karolz.hadnet.pl/graphic/avatar.jpg" alt="Karol Zinka" class="avatar">
+  <div class="header-text">
+    <h1>Karol Zinka</h1>
+    <p class="header-subtext">Automatyzacja procesów biurowych i logistycznych</p>
+    <p class="header-subtext">Wsparcie w zarządzaniu obiegiem dokumentów elektronicznych</p>
+    <p class="header-subtext">HelpDesk IT dla firm</p>
+  </div>
+</header>
+ <!-- 📌 Hamburger dla mobilnych -->
+<div class="hamburger" onclick="toggleMobileMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<!-- 📌 Menu dla komputerów -->
+<nav class="nav-menu">
+  <ul class="nav-links">
+    <li><a href="#omnie">O mnie</a></li>
+    <li><a href="#umiejetnosci">Umiejętności</a></li>
+    <li><a href="#kariera">Kariera</a></li>
+    <li><a href="#dzialalnosc">Działalność</a></li>
+    <li><a href="#ngo">NGO</a></li>
+    <li><a href="#zainteresowania">Zainteresowania</a></li>
+    <li><a href="#partnerzy">Partnerzy</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+ 
+
+</div>
+
+ 
+
+<!-- 📌 Ukryty select dla tłumacza -->
+<div id="google_translate_element" style="display: none;"></div>
+
+<!-- 📌 Flagi jako trigger tłumaczenia -->
+<div id="custom-google-translate">
+  <img src="https://flagcdn.com/w40/pl.png" alt="PL" onclick="setLanguage('pl')">
+  <img src="https://flagcdn.com/w40/gb.png" alt="EN" onclick="setLanguage('en')">
+</div>
+
+ 
+
+</div>
+
+
+ 
+
+ 
+
+
+  <!-- 📌 Wyszukiwarka -->
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Szukaj..." id="searchBox" oninput="searchText()">
+  <span id="searchCounter"></span>
+    <span class="clear-search" id="clearSearch" onclick="clearSearch()">❌</span>
+  <div class="search-controls">
+    <span class="search-prev" onclick="prevSearch()">
+      <svg viewBox="0 0 24 24"><path fill="white" d="M15.5 19l-7-7 7-7"/></svg>
+    </span>
+    <span class="search-next" onclick="nextSearch()">
+      <svg viewBox="0 0 24 24"><path fill="white" d="M8.5 5l7 7-7 7"/></svg>
+    </span>
+  </div>
+</div>
+
+
+</nav>
+
+<!-- 📌 Pełnoekranowe menu na mobilnych -->
+<div class="mobile-menu" id="mobileMenu">
+ <div id="custom-google-translate">
+  <img src="https://flagcdn.com/w40/pl.png" alt="PL" onclick="setLanguage('pl')">
+  <img src="https://flagcdn.com/w40/gb.png" alt="EN" onclick="setLanguage('en')">
+</div>
+  <a href="#omnie" onclick="toggleMobileMenu()">O mnie</a>
+  <a href="#umiejetnosci" onclick="toggleMobileMenu()">Umiejętności</a>
+  <a href="#kariera" onclick="toggleMobileMenu()">Kariera</a>
+  <a href="#dzialalnosc" onclick="toggleMobileMenu()">Działalność gospodarcza</a>
+  <a href="#ngo" onclick="toggleMobileMenu()">Praca na rzecz NGO</a>
+  <a href="#zainteresowania" onclick="toggleMobileMenu()">Zainteresowania</a>
+  <a href="#partnerzy" onclick="toggleMobileMenu()">Partnerzy</a>
+  <a href="#kontakt" onclick="toggleMobileMenu()">Kontakt</a>
+
+  <!-- 📌 Wyszukiwarka w menu mobilnym -->
+  
+</div>
+
+  
+<script>
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("show");
+}
+function toggleMobileMenu() {
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+
+
+</script>
+
+
+ <main>
+
+<div class="container">
+<section class="section" id="omnie">
+    <h2>O mnie</h2>
+    <p><strong>Jestem programistą</strong> specjalizującym się w  automatyzacji procesów biurowych i logistycznych  oraz tworzeniu narzędzi opartych na <strong>ekosystemie Google Workspace</strong>. 
+       Moja praca w IT rozpoczęła się z pasji do usprawniania codziennych zadań i poszukiwania efektywnych rozwiązań dla firm.</p>
+
+    <p>Początkowo, jako <strong>samouk</strong>, zdobywałem wiedzę korzystając z dostępnych zasobów online, takich jak YouTube czy 
+       Stack Overflow. Z czasem zacząłem tworzyć proste skrypty, które <strong>automatyzowały rutynowe czynności</strong>. 
+       To doświadczenie uświadomiło mi, jak ogromny potencjał drzemie w narzędziach Google.</p>
+
+    <p>Obecnie <strong>pomagam firmom</strong> w pełni wykorzystać możliwości Google Workspace, tworząc rozwiązania oparte na takich usługach jak:</p>
+    
+    <ul>
+      <li><strong>BigQuery</strong> – analiza dużych zbiorów danych</li>
+      <li><strong>Google Drive</strong> – zarządzanie dokumentami</li>
+      <li><strong>Google Docs</strong> – automatyzacja tworzenia treści</li>
+      <li><strong>Google Sheets</strong> – raportowanie i analizy</li>
+    </ul>
+
+    <p>Firmy mogą analizować duże zbiory danych bezpośrednio w Arkuszach Google, automatyzować przepływ dokumentów oraz tworzyć <strong>zaawansowane raporty i analizy</strong>.</p>
+
+    <p>Moja praca to <strong>nie tylko pisanie kodu</strong>, ale przede wszystkim zrozumienie potrzeb klienta i dostosowanie rozwiązań do ich specyficznych wymagań. 
+       Wierzę, że odpowiednio dobrane i zaimplementowane narzędzia mogą <strong>zwiększyć efektywność</strong> i konkurencyjność każdej organizacji.</p>
+
+    <p><strong>Jeśli poszukujesz sposobów na optymalizację procesów w Twojej firmie z wykorzystaniem Google Workspace</strong>, 
+       chętnie pomogę w realizacji tych celów!</p>
+</section>
+
+
+<section class="section" id="umiejetnosci">
+    <h2>Umiejętności</h2>
+
+    <ul>
+        <li><strong>Automatyzacja procesów biurowych (VBA):</strong> Tworzenie makr w Excelu usprawniających codzienne zadania, takie jak generowanie raportów i przetwarzanie danych.</li>
+        <li><strong>Znajomość SQL i Google BigQuery:</strong> Praktyczne doświadczenie w analizie danych z wykorzystaniem SQL w BigQuery; swobodne posługiwanie się MySQL i PostgreSQL.</li>
+        <li><strong>JavaScript i Google Apps Script:</strong> Tworzenie interaktywnych aplikacji webowych oraz automatyzacja zadań w ekosystemie Google Workspace.</li>
+        <li><strong>Automatyzacja procesów IT:</strong> Analiza i optymalizacja procesów poprzez integrację systemów i redukcję manualnych czynności.</li>
+    </ul>
+
+    <h3>Doświadczenie projektowe</h3>
+
+    <ul>
+        <li><strong>System naliczania czasu pracy:</strong> Opracowanie narzędzia monitorującego i raportującego czas pracy pracowników, zwiększającego efektywność zarządzania zasobami ludzkimi.</li>
+        <li><strong>System CRM zintegrowany z QMS:</strong> Stworzenie systemu zarządzania relacjami z klientami, zintegrowanego z systemem zarządzania jakością, co usprawniło procesy sprzedażowe i zapewniło zgodność z normami jakości.</li>
+        <li><strong>System raportowania terminów umów i przeglądów:</strong> Implementacja rozwiązania śledzącego ważne terminy, takie jak odnowienia umów czy przeglądy techniczne, minimalizując ryzyko opóźnień i kar.</li>
+        <li><strong>Generowanie dokumentów przewozowych z etykietami logistycznymi GS1:</strong> Opracowanie systemu tworzącego dokumenty transportowe oraz etykiety zgodne ze standardami GS1, co usprawniło procesy logistyczne i zapewniło lepszą identyfikowalność przesyłek.</li>
+        <li><strong>System zarządzania gospodarstwem rolnym:</strong> Stworzenie narzędzia do zarządzania gospodarstwem, umożliwiającego generowanie kart pól, raportowanie kosztów produkcji oraz monitorowanie stanów magazynowych, wspierając rolników w efektywnym zarządzaniu zasobami.</li>
+        <li><strong>Narzędzie HRM oparte na Google BigQuery:</strong> Obecnie pracuję nad systemem do analizy efektywności roboczogodzin w produkcji oraz wyznaczania celów dla pracowników funkcyjnych, opartym na Google BigQuery, co ma na celu optymalizację procesów produkcyjnych i zwiększenie wydajności zespołów.</li>
+    </ul>
+</section>
+
+
+ <section class="section" id="kariera">
+    <h2>Kariera zawodowa</h2>
+
+    <h3>Inter Cars – Brygadzista w Hurtowni Części Samochodowych</h3>
+    <p>Moja kariera rozpoczęła się w <strong>Inter Cars</strong> na stanowisku magazyniera, gdzie zdobyłem pierwsze doświadczenia związane z logistyką i organizacją pracy w magazynie. Poznałem zasady mapowania magazynu, znaczenie kodów kreskowych oraz wpływ rozmieszczenia towarów na szybkość kompletacji zamówień (<em>pickingflow</em>).</p>
+    <p>Awansując na brygadzistę, moje obowiązki obejmowały:</p>
+    <ul>
+        <li>Planowanie pracy magazynu i zarządzanie zespołem,</li>
+        <li>Tworzenie grafików i przydzielanie obowiązków pracownikom,</li>
+        <li>Obsługę klientów oraz zapewnienie sprawnej realizacji zamówień,</li>
+        <li>Nadzór nad prawidłowym rozmieszczeniem towarów i organizacją przestrzeni magazynowej.</li>
+    </ul>
+    <p>To doświadczenie ugruntowało moje umiejętności logistyki, organizacji pracy zespołu oraz optymalizacji procesów magazynowych.</p>
+
+    <h3>Telezakupy Mango Media – Warehouse Team Leader</h3>
+    <p>Początkowo zatrudniony jako pakowacz paczek, szybko zacząłem przejmować dodatkowe obowiązki, co zaowocowało awansem. W kluczowym momencie transformacji firmy z telezakupów do pełnoprawnego e-commerce wdrożyłem:</p>
+    <ul>
+        <li>Mapowanie magazynu oraz systemy skanowania kodów kreskowych,</li>
+        <li>Automatyzację procesów przyjęcia i wydania towarów,</li>
+        <li>Program do sprawdzania dostaw na podstawie kodów EAN,</li>
+        <li>System obliczania czasu pracy i KPI w Excel VBA,</li>
+        <li>System rozliczania opakowań dla BDO.</li>
+    </ul>
+    <p>Dzięki mojemu wkładowi <strong>Mango Media</strong> płynnie przeszło w model e-commerce, a logistyka została w pełni zautomatyzowana i zoptymalizowana.</p>
+
+    <h3>Polfarm – Specjalista ds. Logistyki</h3>
+    <p>W firmie <strong>Polfarm</strong> objąłem stanowisko spedytora, jednak szybko zauważyłem, że brakowało systemowych rozwiązań wspierających logistykę i zarządzanie zamówieniami. Moje działania obejmowały:</p>
+    <ul>
+        <li>Wdrożenie systemu zleceń transportowych, który automatyzował proces generowania i wysyłki zleceń,</li>
+        <li>Stworzenie systemu zleceń zakupu towaru, powiązanego ze zleceniami transportowymi,</li>
+        <li>Automatyzację procesów przyjmowania i rozliczania dostaw,</li>
+        <li>Wdrożenie systemu zarządzania jakością (QMS) i optymalizację wymogów certyfikacyjnych,</li>
+        <li>Opracowanie narzędzia do zarządzania czasem pracy i planowaniem urlopów.</li>
+    </ul>
+    <p>Moje systemy bezpośrednio wpłynęły na rozwój firmy, umożliwiając spełnienie standardów jakościowych <strong>BRC i IFS</strong> oraz współpracę z kluczowymi klientami, takimi jak <strong>JMP (Biedronka) czy Lidl</strong>.</p>
+</section>
+
+
+<section class="section" id="dzialalnosc">
+    <h2>Działalność gospodarcza</h2>
+
+    <p>Po sukcesach w <strong>Polfarm</strong> rozpocząłem działalność gospodarczą w zakresie automatyzacji i IT, realizując projekty dla firm <strong>Polfarm.eu</strong> oraz <strong>EuroTrans</strong>.</p>
+
+    <h3>Polfarm.eu – System Zarządzania Gospodarstwem Rolnym</h3>
+    <p>Stworzyłem kompleksowy system do zarządzania gospodarstwem rolnym, który wspiera firmę w uzyskaniu certyfikacji <strong>GlobalGAP</strong>. System oferuje:</p>
+    <ul>
+        <li>Automatyczne generowanie <strong>Karty Pola</strong>,</li>
+        <li>Raportowanie kosztów produkcji i monitorowanie upraw,</li>
+        <li>Mobilny dostęp do danych – system oparty na <strong>Google Sheets</strong>, ale funkcjonujący jako aplikacja webowa.</li>
+    </ul>
+    <p>Dzięki wdrożonemu systemowi firma zyskała <strong>w pełni zautomatyzowane procesy gospodarstwa rolnego</strong>, co ułatwia spełnienie wymagań jakościowych i certyfikacyjnych.</p>
+
+    <h3>EuroTrans – System Zarządzania Flotą i Wsparcie IT</h3>
+    <p>Opracowałem rozwiązania ułatwiające zarządzanie flotą i dokumentacją, które obejmują:</p>
+    <ul>
+        <li>System do monitorowania terminów badań technicznych pojazdów, legalizacji tachografów oraz ważności polis OC,</li>
+        <li>Wdrożenie <strong>elektronicznego obiegu dokumentów</strong>, usprawniającego przechowywanie i udostępnianie danych,</li>
+        <li>Wsparcie IT i <strong>helpdesk</strong>, pomagając firmie w optymalizacji narzędzi cyfrowych.</li>
+    </ul>
+    <p>Dzięki wdrożonym rozwiązaniom <strong>EuroTrans</strong> efektywnie zarządza flotą i dokumentacją, co przekłada się na lepszą organizację pracy i unikanie problemów z terminami przeglądów.</p>
+
+    <p><strong>Jestem otwarty na nowe doświadczenia i współprace.</strong> Jeśli poszukujesz rozwiązań IT, które usprawnią procesy w Twojej firmie, chętnie pomogę!</p>
+</section>
+
+ 
+ <section class="section" id="ngo">
+    <h2>Praca na rzecz NGO</h2>
+
+    <h3>Ekstremalna Droga Krzyżowa – Koordynator ds. Komunikacji / Lider Rejonu Gdynia-Swarzewo</h3>
+    <p>Moja rola w <strong>Ekstremalnej Drodze Krzyżowej (EDK)</strong> obejmuje zarówno koordynację społeczności i komunikacji, jak i rozwój narzędzi IT wspierających rekrutację nowych liderów.</p>
+    
+    <ul>
+        <li>Organizuję rejon <strong>Gdynia-Swarzewo</strong>, dbając o logistykę trasy i kontakt z uczestnikami,</li>
+        <li>Zarządzam społecznością na <strong>WhatsApp</strong>, ułatwiając komunikację organizatorów i liderów,</li>
+        <li>Wdrożyłem system <strong>HRM</strong> dla działu koordynacji, który wspiera rekrutację liderów i automatyzuje procesy organizacyjne,</li>
+        <li>Integruję dane między <strong>Google Sheets</strong>, LP w <strong>Synerise</strong> i aplikacją webową.</li>
+    </ul>
+
+    <p>Dzięki moim działaniom <strong>EDK</strong> sprawnie rekrutuje liderów, a wydarzenie jest organizowane w sposób bardziej uporządkowany i przejrzysty.</p>
+
+    <h3>Zrzeszenie Kaszubsko-Pomorskie – Wsparcie IT i Marketingowe</h3>
+    <p>W ramach działalności w <strong>Zrzeszeniu Kaszubsko-Pomorskim (oddział Gdynia)</strong> angażuję się w promocję kaszubskiej kultury oraz wdrażanie narzędzi cyfrowych.</p>
+    
+    <ul>
+        <li>Założyłem stronę <strong>ZKP</strong> na <strong>Facebooku</strong> oraz społeczność na <strong>WhatsApp</strong>,</li>
+        <li>Stworzyłem system do wysyłki <strong>życzeń świątecznych</strong> na e-mail,</li>
+        <li>Wdrożyłem system powiadomień <strong>e-mail</strong> o wydarzeniach,</li>
+        <li>Pracuję nad implementacją <strong>Google Workspace</strong> dla NGO,</li>
+        <li>Aktywnie uczestniczę w wydarzeniach i promuję kaszubską kulturę w regionie.</li>
+    </ul>
+
+    <p>Dzięki wdrożonym narzędziom <strong>ZKP</strong> zyskało nowoczesne formy komunikacji i promocji, co przełożyło się na lepsze zaangażowanie społeczności.</p>
+</section>
+
+
+
+<section class="section" id="zainteresowania">
+    <h2>Zainteresowania</h2>
+    
+    <ul>
+        <li><strong>Sztuczna inteligencja i automatyzacja pracy</strong> – badanie możliwości wykorzystania AI w optymalizacji procesów biznesowych i zwiększaniu efektywności pracy.</li>
+        <li><strong>Relacyjne bazy danych</strong> – analiza ich zastosowania w małych przedsiębiorstwach i optymalizacja zarządzania danymi.</li>
+        <li><strong>Literatura fantasy</strong> – zamiłowanie do światów inspirowanych mitologią i historią, takich jak <em>Wiedźmin</em>, <em>Władca Pierścieni</em>, <em>Harry Potter</em> czy <em>Opowieści z Narnii</em>.</li>
+        <li><strong>Historia Polski i Kaszub</strong> – zgłębianie historii oraz promowanie kaszubskiej kultury i dziedzictwa.</li>
+        <li><strong>Podróże i krajoznawstwo</strong> – odkrywanie nowych miejsc, poznawanie lokalnej historii i tradycji.</li>
+        <li><strong>Aktywność fizyczna</strong> – bieganie, jazda na rowerze, pływanie, jazda na rolkach; aktywny wypoczynek i spędzanie czasu z rodziną.</li>
+    </ul>
+</section>
+
+
+<section class="section" id="partnerzy">
+  <h2>Partnerzy</h2>
+  <div class="partner-carousel">
+    <div class="swiper partner-slider">
+      <div class="swiper-wrapper">
+      
+        <div class="swiper-slide">
+          <div class="partner-content">
+            <div class="partner-description">
+              <h3>ArtFolk.eu</h3>
+              <p>ArtFolk to sklep internetowy promujący polską sztukę ludową. Oferuje ręcznie wykonane pamiątki, biżuterię i akcesoria inspirowane folklorem, w tym wzory kaszubskie, 			łowickie czy podhalańskie.</p>
+              <a href="https://artfolk.eu/" class="partner-link">Zobacz więcej</a>
+            </div>
+            <img src="https://karolz.hadnet.pl/graphic/loga/art.png" alt="ArtFolk">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner-content">
+            <div class="partner-description">
+              <h3>Czec</h3>
+              <p>Czec to wydawnictwo specjalizujące się w literaturze kaszubskiej i regionalnej. Oferuje książki, albumy i materiały edukacyjne promujące historię, kulturę oraz język 			Kaszub.</p>
+              <a href="https://przykladowylink.pl" class="partner-link">Zobacz więcej</a>
+            </div>
+            <img src="https://karolz.hadnet.pl/graphic/loga/czec.png" alt="Księgarnia Czec">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner-content">
+            <div class="partner-description">
+              <h3>EDK</h3>
+              <p>Ekstremalna Droga Krzyżowa (EDK) to wyzwanie duchowe i fizyczne – nocna, samotna wędrówka na dystansie co najmniej 40 km, mająca na celu głęboką refleksję i rozwój osobisty. To jeden z najambitniejszych projektów chrześcijańskich, inspirujący tysiące ludzi do przekraczania własnych granic.</p>
+              <a href="https://www.edk.org.pl/" class="partner-link">Zobacz więcej</a>
+            </div>
+            <img src="https://karolz.hadnet.pl/graphic/loga/edk.png" alt="Ekstremalna Droga Krzyżowa">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner-content">
+            <div class="partner-description">
+              <h3>Euro-Trans s.c.</h3>
+              <p>Euro-Trans s.c. to firma transportowa specjalizująca się w przewozie kontenerowym, oferująca niezawodne i terminowe usługi logistyczne. Dzięki nowoczesnej flocie i doświadczeniu w branży zapewnia efektywny transport towarów na terenie kraju i Europy. </p>
+              <a href="https://aleo.com/pl/firma/euro-trans-sc-gdynia" class="partner-link">Zobacz więcej</a>
+            </div>
+            <img src="https://karolz.hadnet.pl/graphic/loga/et.jpg" alt="Euro-Trans">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner-content">
+            <div class="partner-description">
+              <h3>Kaszubskie Forum Kultury</h3>
+              <p>Kaszubskie Forum Kultury to organizacja promująca kulturę i dziedzictwo Kaszub. Działa na rzecz popularyzacji języka, tradycji oraz sztuki regionu poprzez organizację 			wydarzeń, warsztatów i wydawnictw.</p>
+              <a href="https://kaszubskieforumkultury.pl/" class="partner-link">Zobacz więcej</a>
+            </div>
+            <img src="https://karolz.hadnet.pl/graphic/loga/kfk.png" alt="Kaszubskie Forum Kultury">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner-content">
+            <div class="partner-description">
+              <h3>Polfarm.eu</h3>
+              <p>Polfarm.eu to doświadczony producent owoców, warzyw i zbóż, posiadający liczne certyfikaty jakości. Firma promuje zrównoważoną, integrowaną produkcję wolną od pozostałości środków ochrony roślin. </p>
+              <a href="https://polfarm.com" class="partner-link">Zobacz więcej</a>
+            </div>
+            <img src="https://karolz.hadnet.pl/graphic/loga/polfarm.png" alt="Polfarm">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner-content">
+            <div class="partner-description">
+              <h3>Zrzeszenie Kaszubsko-Pomorskie Oddział w Gdyni</h3>
+              <p>ZKP Oddział w Gdyni to organizacja promująca kulturę, język i tradycje Kaszub. Angażuje się w działalność społeczną, edukacyjną i kulturalną, wspierając lokalną społeczność. </p>
+              <a href="https://kaszubi.pl/part/gdynia/index" class="partner-link">Zobacz więcej</a>
+            </div>
+            <img src="https://karolz.hadnet.pl/graphic/loga/zkp.png" alt="Zrzeszenie Kaszubsko-Pomorskie">
+          </div>
+        </div>
+
+      </div>
+ 
+ <br>
+      <!-- Strzałki nawigacyjne -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+ 
+      <!-- Pagina (kropki nawigacyjne) -->
+      <div class="swiper-pagination"></div>
+ 
+    </div> 
+ 
+</section>
+
+
+<!-- Swiper.js -->
+<script>
+var swiper = new Swiper('.partner-slider', {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: { delay: 10000 }, // Auto-zmiana co 10 sek
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    on: {
+        init: function () {
+            // Sprawdzenie, czy strzałki są widoczne
+            let prevArrow = document.querySelector('.swiper-button-prev');
+            let nextArrow = document.querySelector('.swiper-button-next');
+
+            if (!prevArrow || !nextArrow) {
+                console.warn("⚠ Strzałki nie zostały znalezione! Sprawdź CSS i HTML.");
+            } else {
+                console.log("✅ Strzałki załadowane poprawnie.");
+            }
+        }
+    }
+});
+
+</script>
+
+<style>
+  .partner-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+.partner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  gap: 20px;
+}
+
+  .partner-description {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .partner-description h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .partner-description p {
+    font-size: 16px;
+    color: #ddd;
+  }
+
+  .partner-content img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+ 
+  }
+
+/* Strzałki - dostosowane do każdej rozdzielczości */
+.swiper-button-prev,
+.swiper-button-next {
+    color: white !important;
+    background: rgba(255, 140, 0, 0.9); /* Pomarańczowe tło */
+    width: 35px; /* Mniejszy rozmiar */
+    height: 35px;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 50; /* Wyższy niż inne elementy */
+}
+
+/* Przesunięcie strzałek - lekko nad kropki */
+.swiper-button-prev {
+    left: 30%;
+    bottom: 5px; /* Lekko nad kropkami */
+    top: auto;
+}
+
+.swiper-button-next {
+    right: 3%;
+    bottom: 5px;
+    top: auto;
+}
+
+/* Efekt hover - delikatne podświetlenie */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: rgba(255, 140, 0, 1);
+    transform: scale(1.1);
+}
+
+/* Ikony w strzałkach */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px !important; /* Zmniejszona ikona */
+    font-weight: bold !important;
+    color: white !important;
+}
+
+/* Responsywność - na mobilnych mniejsze strzałki i bliżej krawędzi */
+@media (max-width: 768px) {
+    .swiper-button-prev, .swiper-button-next {
+        width: 25px;
+        height: 25px;
+        bottom: 15px; /* Jeszcze niżej dla mobilnych */
+    }
+
+    .swiper-button-prev {
+        left: 8%;
+    }
+
+    .swiper-button-next {
+        right: 8%;
+    }
+}
+
+.cookie-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  color: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  width: 90%;
+  max-width: 500px;
+  display: none;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 140, 0, 0.3);
+}
+
+.cookie-modal p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.cookie-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cookie-buttons button {
+  background: linear-gradient(135deg, #ff6f00, #ff8c00);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cookie-buttons button.reject {
+  background: #444;
+}
+
+.cookie-buttons button:hover {
+  background: #e65c00;
+}
+
+.cookie-buttons button.reject:hover {
+  background: #666;
+}
+.privacy-link {
+  color: #ffa733;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.privacy-link:hover {
+  color: #ffcc80;
+}
+.cookie-privacy-toggle {
+  color: #ffa733;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cookie-privacy-toggle:hover {
+  color: #ffcc80;
+}
+ 
+.privacy-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.privacy-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff8c00; /* podkreślenie koloru checkboxa */
+  cursor: pointer;
+}
+#privacyCheckWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.privacy-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.privacy-label input[type="checkbox"] {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+input:not([type="checkbox"]), textarea {
+  display: block;
+  margin: 0 auto;
+}
+ 
+ 
+  .custom-checkbox + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  .custom-checkbox + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  .custom-checkbox:checked + label:before {
+    background-color: #0D6EFD;
+    border-color: #0D6EFD;
+  }
+  .custom-checkbox:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    color: #fff;
+    font-size: 16px;
+  }
+ 
+label[for="customZgoda"] {
+  display: none !important;
+}
+
+.privacy-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #ccc;
+  margin: 20px 0;
+}
+
+.privacy-check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #ff8c00; /* nowoczesne przeglądarki obsługują */
+  margin: 0;
+  cursor: pointer;
+  appearance: auto;
+}
+
+.privacy-check a {
+  color: #ff8c00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.privacy-check a:hover {
+  color: #ffa733;
+}
+
+.modal.privacy-modal {
+  background: #1f1f1f;
+  color: #f0f0f0;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  display: none;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.modal.privacy-modal .modal-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffb347;
+}
+
+.modal.privacy-modal .modal-body p {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+.modal.privacy-modal .modal-body ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.modal.privacy-modal .modal-body ul li {
+  list-style: disc;
+  margin: 5px 0;
+}
+
+.modal.privacy-modal .contact-info {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.modal.privacy-modal .contact-info a {
+  color: #ffb347;
+  text-decoration: underline;
+}
+
+.modal.privacy-modal .contact-info a:hover {
+  color: #ffd580;
+}
+
+.modal.privacy-modal .modal-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal.privacy-modal .modal-footer button {
+  background: linear-gradient(135deg, #ff8c00, #ff6f00);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal.privacy-modal .modal-footer button:hover {
+  background: #e65c00;
+}
+
+ 
+
+</style>
+
+
+</main>
+ 
+
+
+<div class="botton">
+<!-- Sekcja Kontakt -->
+<section class="section" id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Masz pytania? Skontaktuj się ze mną poprzez poniższy formularz.</p>
+
+  <form id="contactForm">
+    <div class="form-group">
+      <input type="text" id="name" name="name" required placeholder=" ">
+      <label for="name">Imię i nazwisko</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" id="email" name="email" required placeholder=" ">
+      <label for="email">Twój e-mail</label>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="subject" name="subject" required placeholder=" ">
+      <label for="subject">Temat</label>
+    </div>
+
+    <div class="form-group">
+      <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+      <label for="message">Wiadomość</label>
+    </div>
+
+<div class="privacy-check">
+  <input type="checkbox" id="customZgoda">
+  <span>Akceptuję <a href="javascript:void(0)" onclick="openPrivacyModal()">politykę prywatności</a></span>
+</div>
+
+
+
+
+
+    <button type="submit" id="submitButton">Wyślij wiadomość</button>
+    <div class="spinner" id="spinner"></div>
+  </form>
+
+  <p id="status" class="status-message">Dziękuję za wiadomość! Odezwę się jak tylko będę miał chwilę.</p>
+</section>
+
+<div id="privacyModal" class="modal privacy-modal">
+  <div class="modal-header">Polityka prywatności</div>
+  <div class="modal-body">
+<div class="privacy-intro">
+  <p>
+    Administratorem Twoich danych osobowych jest Karol Zinka z siedzibą w Gdyni. Dane przekazane przez formularz kontaktowy są przetwarzane wyłącznie w celu udzielenia odpowiedzi.
+    Twoje dane nie są przekazywane podmiotom trzecim ani wykorzystywane do celów marketingowych.
+  </p>
+</div>
+
+
+    <h4>Twoje prawa:</h4>
+    <ul>
+      <li>wgląd w swoje dane,</li>
+      <li>prawo do ich poprawienia,</li>
+      <li>usunięcia danych („prawo do bycia zapomnianym”),</li>
+      <li>ograniczenia przetwarzania,</li>
+      <li>skarga do UODO.</li>
+    </ul>
+
+    <p class="contact-info">
+      W celu realizacji powyższych praw, napisz na: <a href="mailto:karolzinka@gmail.com">karolzinka@gmail.com</a>
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button onclick="closePrivacyModal()">Zamknij</button>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("customZgoda");
+  const submitButton = document.getElementById("submitButton");
+
+  checkbox.addEventListener("change", function () {
+    submitButton.disabled = !this.checked;
+  });
+
+  submitButton.disabled = !checkbox.checked;
+});
+
+</script>
+
+<script>
+function toggleCookiePrivacy() {
+  const details = document.getElementById("cookiePrivacyDetails");
+  details.style.display = details.style.display === "none" ? "block" : "none";
+}
+
+
+function openPrivacyModal() {
+  document.getElementById("privacyModal").style.display = "block";
+}
+
+function closePrivacyModal() {
+  document.getElementById("privacyModal").style.display = "none";
+}
+
+ 
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  document.getElementById("submitButton").disabled = true;
+  document.getElementById("spinner").style.display = "block";
+
+  fetch("https://script.google.com/macros/s/AKfycbwqc79p_d9AO3QLODw5dU-GXEJA-JU4le1oBL_jzS7WHOoL_cVX9U2fo9MAY7qMUFxL3w/exec", { 
+    method: "POST", 
+    body: new FormData(this) 
+  })
+  .then(response => response.text())
+  .then(data => {
+    openModal(); // Otwórz modal po sukcesie
+  })
+  .catch(error => {
+    alert("Wystąpił błąd. Spróbuj ponownie.");
+  })
+  .finally(() => {
+    document.getElementById("spinner").style.display = "none";
+    document.getElementById("submitButton").disabled = false;
+    document.getElementById("contactForm").reset();
+  });
+});
+
+ 
+  document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+
+document.addEventListener("mousemove", (e) => {
+  document.querySelectorAll(".section").forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    const x = e.clientX - rect.left; // Pozycja X wewnątrz sekcji
+    const y = e.clientY - rect.top; // Pozycja Y wewnątrz sekcji
+
+    section.style.setProperty("--mouse-x", `${x}px`);
+    section.style.setProperty("--mouse-y", `${y}px`);
+  });
+});
+let searchResults = [];
+let currentIndex = -1;
+
+ 
+function searchText() {
+  let query = document.getElementById("searchBox").value.trim().toLowerCase();
+  let counterDisplay = document.getElementById("searchCounter");
+  let clearButton = document.getElementById("clearSearch");
+
+  if (query.length < 2) {
+    clearHighlights();
+    counterDisplay.textContent = "";
+    clearButton.style.display = "none"; // Ukryj "X"
+    return;
+  }
+
+  clearButton.style.display = "inline"; // Pokaż "X"
+  clearHighlights();
+  searchResults = [];
+  currentIndex = -1;
+
+  let elements = document.body.querySelectorAll("main p, main li, main span");
+
+  elements.forEach(el => {
+    let text = el.textContent;
+    let regex = new RegExp(query, "gi");
+
+    if (text.toLowerCase().includes(query)) {
+      el.innerHTML = text.replace(regex, match => `<span class="highlight">${match}</span>`);
+      searchResults.push(...el.querySelectorAll(".highlight"));
+    }
+  });
+
+  if (searchResults.length > 0) {
+    currentIndex = 0;
+    scrollToSearch();
+  }
+
+  updateSearchCounter();
+}
+
+function clearSearch() {
+  document.getElementById("searchBox").value = "";
+  document.getElementById("clearSearch").style.display = "none";
+  clearHighlights();
+}
+ 
+
+
+function clearHighlights() {
+  document.querySelectorAll(".highlight").forEach(el => {
+    el.replaceWith(document.createTextNode(el.textContent));
+  });
+  searchResults = [];
+  currentIndex = -1;
+  document.getElementById("searchCounter").textContent = "";
+}
+
+function scrollToSearch() {
+  if (searchResults.length === 0) return;
+
+  // Usuń poprzednie wyróżnienie
+  searchResults.forEach(el => el.classList.remove("active-highlight"));
+
+  // Ustaw nowe wyróżnienie
+  searchResults[currentIndex].classList.add("active-highlight");
+  searchResults[currentIndex].scrollIntoView({ behavior: "smooth", block: "center" });
+
+  updateSearchCounter();
+}
+
+function nextSearch() {
+  if (searchResults.length === 0) return;
+  currentIndex = (currentIndex + 1) % searchResults.length;
+  scrollToSearch();
+}
+
+function prevSearch() {
+  if (searchResults.length === 0) return;
+  currentIndex = (currentIndex - 1 + searchResults.length) % searchResults.length;
+  scrollToSearch();
+}
+
+function updateSearchCounter() {
+  let counterDisplay = document.getElementById("searchCounter");
+  if (searchResults.length > 0) {
+    counterDisplay.textContent = `🔍 ${currentIndex + 1} / ${searchResults.length}`;
+  } else {
+    counterDisplay.textContent = "";
+  }
+}
+
+// Obsługa strzałek na klawiaturze
+document.getElementById("searchBox").addEventListener("keydown", function (event) {
+  if (event.key === "ArrowRight") nextSearch();
+  if (event.key === "ArrowLeft") prevSearch();
+});
+
+function toggleQR() {
+  let qrContainer = document.getElementById("qrContainer");
+  qrContainer.classList.toggle("show");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  let qrData = `BEGIN:VCARD
+VERSION:3.0
+N:Zinka;Karol;;;
+TEL:+48793564725
+EMAIL:karolzinka@gmail.com
+END:VCARD`;
+
+  let qrUrl = `https://quickchart.io/qr?text=${encodeURIComponent(qrData)}&size=200&dark=ff8c00&light=ffffff&ecLevel=H&margin=2`;
+
+  document.getElementById("qrCode").src = qrUrl;
+});
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll(".section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach(section => observer.observe(section));
+});
+
+function changeLanguage(lang) {
+  window.location.href = lang === 'pl' ? 'index.html' : 'index_en.html';
+}
+function openModal() {
+  document.getElementById("modal").style.display = "block";
+}
+
+
+</script>
+
+
+
+
+<footer class="footer">
+  <p>Rymarska 30, 81-168 Gdynia, Polska</p>
+  <p>NIP: 9581562625 | REGON: 529280004</p>
+  <p>📞 <a href="tel:+48793564725">Telefon: +48 793 564 725</a></p>
+  <p>📧 <a href="mailto:karolzinka@gmail.com">E-mail: karolzinka@gmail.com</a></p>
+  <div class="qr-wrapper">
+  <button onclick="toggleQR()">QR - kontakt</button>
+  <div class="qr-container" id="qrContainer">
+    <img id="qrCode" src="" alt="Kod QR">
+  </div>
+</div>
+
+  
+<div class="social-icons">
+  <a href="https://www.linkedin.com/in/karol-zinka-a8408516a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn - Karol Zinka">
+    <img src="https://karolz.hadnet.pl/graphic/in.jpg" alt="LinkedIn Karol Zinka">
+  </a>
+  <a href="https://pl-pl.facebook.com/karol.zinka.75" target="_blank" rel="noopener noreferrer" aria-label="Facebook - Karol Zinka">
+    <img src="https://karolz.hadnet.pl/graphic/fb.jpg" alt="Facebook Karol Zinka">
+  </a>
+  <a href="https://www.instagram.com/zineq?igsh=anloam9vYXE5N2h4" target="_blank" rel="noopener noreferrer" aria-label="Instagram - Karol Zinka">
+    <img src="https://karolz.hadnet.pl/graphic/insta.jpg" alt="Instagram Karol Zinka">
+  </a>
+  <a href="https://wa.me/48793564725" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp - Karol Zinka">
+    <img src="https://karolz.hadnet.pl/graphic/WHAT.jpg" alt="WhatsApp Karol Zinka">
+  </a>
+  <a href="https://karolz.hadnet.pl/" target="_blank" rel="noopener noreferrer" aria-label="Strona główna Karol Zinka">
+    <img src="https://karolz.hadnet.pl/graphic/www.png" alt="Strona Karol Zinka">
+  </a>
+</div>
+
+
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <p>Dziękuję za wiadomość! Odezwę się wkrótce. ✅</p>
+    <button onclick="closeModal()">Zamknij</button>
+  </div>
+</div>
+
+<div id="cookieModal" class="cookie-modal">
+
+<div class="cookie-modal-content">
+  <p>Ta strona używa plików cookies w celach statystycznych (Google Analytics). Klikając "Akceptuję", wyrażasz zgodę na ich użycie.</p>
+  
+  <p><a href="javascript:void(0)" class="cookie-privacy-toggle" onclick="openPrivacyModal()">Zobacz politykę prywatności</a></p>
+  
+  <div class="cookie-buttons">
+    <button onclick="acceptCookies()">Akceptuję</button>
+    <button class="reject" onclick="rejectCookies()">Odrzucam</button>
+  </div>
+</div>
+
+</div>
+
+
+
+</footer>
+</div>
+</body>
+</html>
